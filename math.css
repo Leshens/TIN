@@ -1,0 +1,35 @@
+body {
+    counter-reset: section;
+}
+
+h2 {
+    counter-reset: subsection;
+}
+
+h2::before {
+    counter-increment: section;
+    content: "Rozdział " counter(section) ". ";
+}
+
+h3::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) ". ";
+}
+
+p.definition::before{
+    font-size: 16px;
+    font-weight: bold;
+    content: "Definicja " counter(section) "." counter(subsection) ". ";
+}
+p.theorem::before{
+    font-weight: bold;
+    content: "Twierdzenie " counter(section) "." counter(subsection) ". ";
+}
+p.proof::before{
+    font-style: italic;
+    content: "Dowód.";
+}
+figcaption::before{
+    font-size: 18px;
+    content: "Rysunek 1. ";
+}

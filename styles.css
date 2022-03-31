@@ -43,3 +43,8 @@ ol.centrum{
 .journal{
     font-style: oblique;
 }
+@media print{
+    nav{
+        display: none;
+    }
+}
