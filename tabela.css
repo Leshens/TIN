@@ -4,8 +4,14 @@ table {
     width: 100%;
 }
 
-th, td {
+th {
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+td {
+    text-align: right;
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: #EBE8FC;}
+td:nth-child(1),td:nth-child(2) {text-align: left;}
+tr:nth-child(1){border-bottom: 1px solid black}

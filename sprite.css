@@ -1,0 +1,19 @@
+li.otwarty .ikona {
+    width: 46px;
+    height: 12px;
+    display: inline-block;
+    background: url(pics/icons.png) no-repeat 20px -2px;
+}
+li.zamkniety .ikona {
+    width: 46px;
+    height: 12px;
+    display: inline-block;
+    background: url(pics/icons.png) no-repeat 20px -20px;
+}
+li{
+    list-style: none;
+
+}
+div.tekst{
+    display: inline-block;
+}
