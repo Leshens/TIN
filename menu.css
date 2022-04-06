@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+    color: darkblue;
+}
+nav{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: xxx-large;
+}
+ul {
+
+    border-top: 2px solid darkblue;
+
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+}
+
+li {
+
+    border-top: 1px solid darkblue;
+
+    border-radius: 10px;
+    float: left;
+    border-right:1px solid lightgray;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: lightblue;
+}
+.selected {
+    background-color: lightblue;
+}
