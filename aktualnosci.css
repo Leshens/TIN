@@ -1,0 +1,19 @@
+h2{
+    background-color: lightgrey;
+    position: relative;
+    padding: 0 30% 0 0;
+    clear:both;
+    align-items: center;
+    display: flex;
+}
+h2 time{
+    margin: auto;
+    right: 0px;
+    position: absolute;
+    color: dimgrey;
+
+}
+img{
+    float: left;
+    margin: 10px 10px 10px 0px;
+}

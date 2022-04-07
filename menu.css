@@ -1,45 +1,48 @@
-body{
-    background-color: lightblue;
-    color: darkblue;
-}
-nav{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: xxx-large;
-}
 ul {
-
-    border-top: 2px solid darkblue;
-
-    border-radius: 10px;
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: darkgray;
+    font-weight: bold;
 }
 
 li {
-
-    border-top: 1px solid darkblue;
-
-    border-radius: 10px;
-    float: left;
-    border-right:1px solid lightgray;
-    display: inline-block;
+    display: inline;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    background-color: lightgray;
+    border-top: 1px solid blue;
+    border-radius: 15px 15px 0px 0px;
+    margin: 0 1px 0 1px;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+ul > li {
+    display: inline-block;
+    min-width: 49%;
+}
+
+li:not(.active) > ul {
+    display: none;
+}
+
+li.active > ul {
+    display: flex;
+    margin-right: 50%;
+    margin-left: -80%;
+}
+
+nav > ul > li {
+    background-color: gray;
+    border-top: 2px solid blue;
+}
+
+.selected {
+    background-color: gray;
+    border-top: 2px solid gray;
 }
 
 .active {
-    background-color: lightblue;
+    background-color: white;
 }
-.selected {
-    background-color: lightblue;
+
+li.active li {
+    padding: 15px;
+    min-width: 33%;
 }
