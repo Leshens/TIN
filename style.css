@@ -1,0 +1,14 @@
+body{
+    background-color: #f6b5b5;
+    display: inline-block;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container nav ul li{
+    display: inline;
+    background-image: url("images/bg_nav.png");
+    color: white;
+}

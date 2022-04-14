@@ -1,0 +1,11 @@
+thead {
+    background: lightgrey;
+    position: sticky;
+    top: 0;
+}
+
+tbody > tr > th {
+    background: AliceBlue;
+    position: sticky;
+    left: 0;
+}

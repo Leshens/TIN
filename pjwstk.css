@@ -1,0 +1,76 @@
+#grid-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "banner banner rekrutacja"
+    "wi wsnm impostrant"
+    "wi wsnm current"
+    "gallery gallery gallery";
+    gap: 20px 32px;
+    justify-items: center;
+}
+nav{
+    grid-area: nav;
+    background-color: red;
+    text-align: left;
+    width: 100%;
+}
+nav ul{
+    display: inline-flex;
+}
+nav li{
+    list-style: none;
+    margin: 10px;
+}
+nav a{
+    color: white;
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+#baner{
+    grid-area: baner;
+}
+#rekrutacja{
+    grid-area: rekrutacja;
+    display: inherit;
+}
+#rekrutacja img,#current img{
+    border: 1px;
+    border-style: solid;
+    padding: 2%;
+    margin: 2%;
+}
+#wi{
+    grid-area: wi;
+}
+#wsnm{
+    grid-area: wsnm;
+}
+#important{
+    grid-area: important;
+}
+#current{
+    grid-area: current;
+    text-align: left;
+    display: inherit;
+    padding-right: 0px;
+}
+#gallery{
+    grid-area: gallery;
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 2% 0;
+}
+body{
+    margin: 0;
+}
