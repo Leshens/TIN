@@ -1,14 +1,127 @@
-body{
-    background-color: #f6b5b5;
+body {
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url(images/bg_nav.png);
+    background-size: contain;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "header header header header" " nav nav nav nav " "left main main important" "footer footer footer footer";
+}
+
+#container > * {
+    padding: 0px 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        grid-template: " header header " " nav nav " " main main " " left important" "footer footer ";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template: "header" "nav" "main" "left" "important" "footer";
+    }
+}
+
+#container header {
+    grid-area: header;
+    background-color: #ff9999;
+    text-align: center;
+}
+
+#container header img {
+    max-width: 100%;
+}
+
+#container nav {
+    padding: 0px;
+    grid-area: nav;
+}
+
+#container nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-image: url(images/bg_nav.png);
+    background-size: contain;
+}
+
+@media screen and (max-width: 800px) {
+    #container nav ul {
+        text-align: center;
+    }
+}
+
+#container nav ul li {
     display: inline-block;
+    padding: 0.75ex 0.5em;
+    border-right: solid 2px black;
+    text-align: center;
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+#container nav ul li:hover {
+    background-image: url(images/bg_nav_h.png);
+    background-size: cover;
 }
-#container nav ul li{
-    display: inline;
-    background-image: url("images/bg_nav.png");
+
+@media screen and (max-width: 600px) {
+    #container nav ul li {
+        display: block;
+        background-image: url(images/bg_nav.png);
+        background-size: contain;
+    }
+}
+
+#container nav ul li a {
+    text-decoration: none;
     color: white;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    #container nav ul li a {
+        text-align: center;
+    }
+}
+
+#container #left {
+    grid-area: left;
+    background-color: #ffcccc;
+}
+
+#container #left a {
+    color: black;
+}
+
+#container #main {
+    grid-area: main;
+    background-color: #ffe6e6;
+}
+
+#container #important {
+    grid-area: important;
+    background-color: #ffb3b3;
+}
+
+#container #important a {
+    color: black;
+}
+
+#container #important ul {
+    list-style: url(images/bullet.png);
+}
+
+#container #important ul li {
+    padding: 0.75ex 0.5em;
+}
+
+#container footer {
+    grid-area: footer;
+    background-color: #ff8080;
+    text-align: center;
 }

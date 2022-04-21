@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+.bg-image {
+  background-image: url(images/bg_nav.png);
+  background-size: contain;
+}
+#container {
+  display: grid;
+  grid-template-areas: "header header header header" " nav nav nav nav ""left main main important" "footer footer footer footer";
+  >* {
+    padding: 0px 0.5em;
+  }
+  header {
+    grid-area: header;
+    background-color: #ff9999;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  nav {
+    padding: 0px;
+    grid-area: nav;
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      background-image: url(images/bg_nav.png);
+      background-size: contain;
+      li {
+        display: inline-block;
+        padding: 0.75ex 0.5em;
+        border-right: solid 2px black;
+        text-align: center;
+        &:hover {
+          background-image: url(images/bg_nav_h.png);
+          background-size: cover;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: sans-serif;
+        }
+      }
+    }
+  }
+  #left {
+    grid-area: left;
+    background-color: #ffcccc;
+    a {
+      color: black;
+    }
+  }
+  #main {
+    grid-area: main;
+    background-color: #ffe6e6;
+  }
+  #important {
+    grid-area: important;
+    background-color: #ffb3b3;
+    a {
+      color: black;
+    }
+    ul {
+      list-style: url(images/bullet.png);
+      li {
+        padding: 0.75ex 0.5em;
+      }
+    }
+  }
+  footer {
+    grid-area: footer;
+    background-color: #ff8080;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  #container {
+    grid-template: " header header "" nav nav "" main main "" left important" "footer footer ";
+    nav {
+      ul {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #container {
+    grid-template: "header" "nav" "main" "left" "important" "footer";
+    nav {
+      ul {
+        li {
+          display: block;
+          background-image: url(images/bg_nav.png);
+          background-size: contain;
+          a {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
