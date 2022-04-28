@@ -33,7 +33,7 @@ div.ikona:hover{
     cursor: pointer;
 }
 div.ikona{
-    background: url(pics/icons.png);
+    background: url(../pics/icons.png);
     width: 15px;
     height: 15px;
     float: left;

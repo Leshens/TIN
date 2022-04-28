@@ -3,7 +3,7 @@ body {
 }
 
 .bg-image {
-    background-image: url(images/bg_nav.png);
+    background-image: url(../images/bg_nav.png);
     background-size: contain;
 }
 
@@ -47,7 +47,7 @@ body {
     padding: 0px;
     margin: 0px;
     list-style: none;
-    background-image: url(images/bg_nav.png);
+    background-image: url(../images/bg_nav.png);
     background-size: contain;
 }
 
@@ -65,14 +65,14 @@ body {
 }
 
 #container nav ul li:hover {
-    background-image: url(images/bg_nav_h.png);
+    background-image: url(../images/bg_nav_h.png);
     background-size: cover;
 }
 
 @media screen and (max-width: 600px) {
     #container nav ul li {
         display: block;
-        background-image: url(images/bg_nav.png);
+        background-image: url(../images/bg_nav.png);
         background-size: contain;
     }
 }
@@ -113,7 +113,7 @@ body {
 }
 
 #container #important ul {
-    list-style: url(images/bullet.png);
+    list-style: url(../images/bullet.png);
 }
 
 #container #important ul li {
