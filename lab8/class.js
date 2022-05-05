@@ -8,7 +8,10 @@ function addClassName(objInput,addInput){
         objInput.className = objInput.className + " " + addInput;
     }
 }
+/*
 addClassName(obj, 'visible');
 console.log(obj.className);
 addClassName(obj, 'visible');
 console.log(obj.className);
+
+ */
